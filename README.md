@@ -35,15 +35,15 @@ It extracts company profile URLs, visits websites, finds contact/impressum pages
 
 ## Challenges and Mitigation
 
-| Challenge                             | Mitigation                                                      
+                                                     
 
-Missing Website Links                     Some company profiles do not provide a “Visit Website” link. Fallback to Europages profile page.     
-Multi-language Contact Info               Scraper searches for multilingual keywords (contact, kontakt, contatti, impressum). 
-Contact Forms Instead of Emails           Only direct emails are extracted; forms are skipped. That is a limitation. Future improvement: parse forms.
-Generic Emails                            Filter info@, contact@, sales@, admin@.                         
-Website Access Issues                     Sites fail to load or are unreachable. Errors logged; pages skipped. Future: retries/timeouts.        
-Slow Loading Pages                        time.sleep() ensures pages load fully before scraping
-Language-specific Menus                   Scraper relies on multilingual keywords
+1. Missing Website Links - Some company profiles do not provide a “Visit Website” link. Fallback to Europages profile page.     
+2. Multi-language Contact Info - Scraper searches for multilingual keywords (contact, kontakt, contatti, impressum). 
+3. Contact Forms Instead of Emails - Only direct emails are extracted; forms are skipped. That is a limitation. Future improvement: parse forms.
+4. Generic Emails - Filter info@, contact@, sales@, admin@.                         
+5. Website Access Issues - Sites fail to load or are unreachable. Errors logged; pages skipped. Future: retries/timeouts.        
+6. Slow Loading Pages - time.sleep() ensures pages load fully before scraping
+7. Language-specific Menus - Scraper relies on multilingual keywords
 
 
 ## Outputs
